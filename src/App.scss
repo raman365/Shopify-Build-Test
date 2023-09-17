@@ -1,0 +1,53 @@
+
+$primary-color: #282c34;
+$font-size: calc(10px + 2vmin);
+$display: flex;
+$middle: center;
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: $primary-color;
+  min-height: 100vh;
+  display: $display;
+  flex-direction: column;
+  align-items: $middle;
+  justify-content: $middle;
+  font-size: $font-size;
+  color: white;
+  font-weight: bold;
+  padding:50px 0;
+}
+
+.pokemon-container {
+  margin-top: 20px;
+  display: $display;
+  width:100%;
+  flex-wrap: wrap;
+  justify-content: $middle;
+  max-width: 800px;
+}
+
+.pokemon-card {
+  display: $display;
+  flex-direction: column;
+  align-items: $middle;
+  width:25%;
+}
+
+.pokemon-image {
+  width: 100px; 
+  height: 100px; 
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.search {
+  padding:10px;
+}
